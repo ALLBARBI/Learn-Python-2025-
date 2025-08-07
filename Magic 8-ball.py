@@ -1,0 +1,43 @@
+# Import the random module
+import random
+
+# Declare a variable for the name of the person asking the Magic 8-Ball
+name = "Allan"
+
+# Declare a variable for the question
+question = "Will I win the lottery?"
+
+# Initialize the answer variable
+answer = ""
+
+# Generate a random number between 1 and 9
+random_number = random.randint(1, 9)
+
+# Uncomment the line below to see the random number generated
+# print(random_number)
+
+# Control flow to determine the answer based on the random number
+if random_number == 1:
+    answer = "Yes - definitely"
+elif random_number == 2:
+    answer = "It is decidedly so"
+elif random_number == 3:
+    answer = "Without a doubt"
+elif random_number == 4:
+    answer = "Reply hazy, try again"
+elif random_number == 5:
+    answer = "Ask again later"
+elif random_number == 6:
+    answer = "Better not tell you now"
+elif random_number == 7:
+    answer = "My sources say no"
+elif random_number == 8:
+    answer = "Outlook not so good"
+elif random_number == 9:
+    answer = "Very doubtful"
+else:
+    answer = "Error"
+
+# Print the result
+print(f"{name} asks: {question}")
+print(f"Magic 8-Ball's answer: {answer}")
